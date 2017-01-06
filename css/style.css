@@ -1,14 +1,28 @@
+
+
 header {
     text-align: center;
   color: #43321d;
   background: #fcfbdc;
 }
 
-#grim {
-  margin-left: -30px;
-  width: 35px;
-  height: 35px;
+header .intro-text .name {
+    display: block;
+    font-weight: 700;
+    font-size: 3em;
+}
 
+header .intro-text .skills {
+    font-size: 2.25em;
+    font-weight: 300;
+}
+
+#grim {
+    margin-left: 0px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 5px;
 }
 
 .navbar-custom {
@@ -19,6 +33,8 @@ header {
 
 .navbar-custom .navbar-brand, .navbar-custom .navbar-brand.active, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-nav li a {
     color: #fcfbdc;
+    font-family: "planewalker";
+    margin-top: 2px;
 }
 
 hr.star-light {
@@ -27,8 +43,52 @@ hr.star-light {
     color: #fcfbdc;
 }
 
+@font-face {
+    font-family: planewalker;
+    src: url("fonts/planewalker.otf");
+}
+
+@font-face {
+    font-family: teutonic;
+    src: url("fonts/teutonic.ttf");
+}
+
+@font-face {
+    font-family: grifo;
+    src: url("fonts/grifo.ttf");
+}
+
+@font-face {
+    font-family: griffo;
+    src: url("fonts/griffo.ttf");
+}
+
+@font-face {
+    font-family: ghotic;
+    src: url("fonts/squac.ttf");
+}
+
+head{
+
+}
+
+header .intro-text .name {
+  font-family: "grifo";
+  font-size: 4em;
+}
+
+section h2 {
+  margin: 0;
+  font-family: "grifo";
+  font-size: 3em;
+}
+
+h3{
+  font-family: "grifo";
+}
+
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "planewalker",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #fcfbdc;
@@ -64,15 +124,25 @@ p {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: auto;;
+    margin-left: auto;
     margin-bottom: 12px;
 }
 
 .center-block {
     display: block;
-    margin: 10px 227px;
+    /*margin: 10px 227px;*/
     background-position: center;
+    margin-top: 15px;
+    }
+
+
+
+
+@media (min-width: 768px)
+.container {
+    width: 100%;
+    margin: auto;
 }
 
 #id {
@@ -80,7 +150,13 @@ p {
 }
 
 #sorteios {
-  margin-left: 30px;
+  margin-left: auto;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+
+    max-width: 300px;
+
 }
 /*footer{
   background-color: #fcfbdc;
